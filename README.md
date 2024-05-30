@@ -1,17 +1,17 @@
 # pattern matching
-slist.c
-containig implementayion of linked list declared in slist.h
-pattern_matching.c
-containig implementayion of pattern matching program declared in pattern_matching.h
-additional info:
-how to use:
-	declare fsm
-	call pm_init(fsm)
-	add all pattern(repeat for each pattern): using pm_addstring(fsm, pattern, pattern_len) 
-	call pm_makeFSM(fsm)
-	declare list(for matchs)
-	list = pm_fsm_search(fsm.zerostate,txt,strlen(txt))
-	call dbllist_destroy(list, FREE_DATA)
-	call pm_destroy(fsm)
+slist.c<br />
+containig implementayion of linked list declared in slist.h<br />
+pattern_matching.c<br />
+containig implementayion of pattern matching program declared in pattern_matching.h<br />
+additional info:<br />
+how to use:<br />
+	declare fsm<br />
+	call pm_init(fsm)<br />
+	add all pattern(repeat for each pattern): using pm_addstring(fsm, pattern, pattern_len) <br />
+	call pm_makeFSM(fsm)<br />
+	declare list(for matchs)<br />
+	list = pm_fsm_search(fsm.zerostate,txt,strlen(txt))<br />
+	call dbllist_destroy(list, FREE_DATA)<br />
+	call pm_destroy(fsm)<br />
 
 By Elya Athlan
